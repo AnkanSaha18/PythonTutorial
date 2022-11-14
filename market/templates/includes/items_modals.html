@@ -1,0 +1,48 @@
+<style>
+  .modal-content{
+  background-color: #212121
+  }
+
+</style>
+
+
+<!-- More Info -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="Modal-MoreInfo-{{ item.id }}" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">
+                    {{ item.name }}
+                </h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                {{ item.description }}
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Purchase Confirm -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="Modal-PurchaseConfirm-{{ item.id }}" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">
+                    {{ item.name }}
+                </h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to buy {{ item.name }} for {{ item.price }}$ ?
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
